@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgb(5, 5, 36);
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(3, 3, 47);
+      }
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+      }
+      nav ul li {
+        list-style-type: none;
+        margin: 0 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(89, 89, 198);
+        font-size: 1.14rem;
+      }
+      hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 136px 0px;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection span {
+        color: rgb(88, 88, 217);
+      }
+      .rightSection {
+        width: 80%;
+        margin: 50px 0px;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .purple {
+        color: rgb(146, 68, 220);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.6rem;
+      }
+      .text-gray {
+        color: grey;
+      }
+      .secondSection div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .thirdSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .secondSection .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0px;
+        display: flex;
+      }
+      .secondSection .vertical {
+        background: white;
+        width: 1px;
+        height: 93px;
+        margin: auto;
+      }
+      .image-top {
+        width: 40px;
+        position: relative;
+        top: -65px;
+        left: -13px;
+      }
+      .project1{
+        display: inline;
+        justify-content: space-between;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 81px;
+        left: -59px;
+        font-size: 1.14rem;
+      }
+      .project1_info{
+        position: relative;
+        top: 158px;
+        left: -158px;
+        width: 234px;
+      }
+      .project2_info{
+        position: relative;
+        top: 158px;
+        left: -254px;
+        width: 234px;
+      }
+      .project3_info{
+        position:relative;
+        top: 158px;
+        left: -158px;
+        width: 234px;
+      }
+      .project1_image{
+        position: relative;
+        top: 300px;
+        left: -388px;
+      }
+      .project2_image{
+        position: relative;
+        top: 300px;
+        left: -476px;
+      }
+      .project3_image{
+        position: relative;
+        top: 300px;
+        left: -388px;
+      }
+      .thirdsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .third_button{
+        background-color: grey;
+        color: black;
+        width: 166px;
+        height: 100px;
+        border-radius: 20%;
+        font-size: 1.14rem;
+      }
+      .first_row{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+      .second_row{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+      .third_row{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+      .fourth_row{
+        display:flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+      .third-buttons{
+        display: inline;
+        justify-content: space-between;
+        font-size: 1.14rem;
+      }
+      .information{
+        display: flex;
+        justify-content: space-around;
+      }
+      .social_profiles{
+        display: flex;
+        justify-content: space-around;
+      }
+      .footer_button{
+        background-color: orange;
+        color: black;
+        width:160px;
+        height: 60px;
+        font-size: 1.14rem;
+      }
+      .first_row button:hover{
+        background-color: rgb(5, 5, 36);
+        color: white;
+      }
+      .second_row button:hover{
+        background-color: rgb(5, 5, 36);
+        color: white;
+      }
+      .third_row button:hover{
+        background-color: rgb(5, 5, 36);
+        color: white;
+      }
+      .fourth_row button:hover{
+        background-color: rgb(5, 5, 36);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Radha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#first">About</a></li>
+            <li><a href="#second">Projects</a></li>
+            <li><a href="#third">Skills</a></li>
+            <li><a href="#fourth">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection" id="first">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Radha Krishna</span>
+          <div>and i am a passionate</div>
+          <!--  <div>Web Developer</div> -->
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="WhatsApp Image 2024-10-27 at 00.52.41_14115529.jpg" alt="" width="400px" style="border-radius: 50%;"/>
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection" id="second">
+        <span class="text-gray">What i have done so far</span>
+        <h1>Projects</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Project1" />
+              <div class="project1">
+                <div class="vertical-title">AIRUP</div>
+                <div class="vertical-desc">
+                  <span class="project1_info">
+                    -It's a platform for the communication between the enterpreneur and investor and get bidding by investor
+                  </span>
+                  <img class="project1_image" src="developer.png" alt="Project1" width="200px" height="200px">
+                </div>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Project2">
+            <div class="project2">
+              <div class="vertical-title">Amazon Recommendation System</div>
+              <div class="vertical-desc">
+                <span class="project2_info">
+                  -It's used to recommend the top rated and reviwed products in amazon
+                </span>
+                <img class="project2_image" src="developer.png" alt="Project2" width="200px" height="200px">
+              </div>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="Project3">
+            <div class="project3">
+              <div class="vertical-title">Monitoring System</div>
+              <div class="vertical-desc">
+                <span class="project3_info">
+                  -It's used to monitor the blood packets in the dashboard and used to donate the packets
+                </span>
+                <img class="project3_image" src="developer.png" alt="Project3" width="200px" height="200px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="thirdsection" id="third">
+        <span class="text-gray">Till Now I have learned</span>
+        <h1>Skills</h1>
+        <div class="third-buttons">
+          <div class="first_row">
+            <button class="third_button">C</button>
+            <button class="third_button">Java</button>
+            <button class="third_button">Python</button>
+          </div>
+          <div class="second_row">
+            <button class="third_button">DSA</button>
+            <button class="third_button">SQL</button>
+            <button class="third_button">HTML</button>
+          </div>
+          <div class="third_row">
+            <button class="third_button">CSS</button>
+            <button class="third_button">JS</button>
+            <button class="third_button">React</button>
+          </div>
+          <div class="fourth_row">
+            <button class="third_button">OOPS</button>
+            <button class="third_button">Node JS</button>
+            <button class="third_button">UI/UX</button>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <footer id="fourth">
+      <div class="information">
+        <h1 style="margin-left: 90px;">Contact Me</h1>
+        <center>
+          <p>Name: Ch Radha Krishna Naga Sai</p>
+          <p>Email: krishnachittala2002@gmail.com</p>
+          <p>Mobile.No: 8317692896</p>
+        </center>
+      </div>
+      <div class="social_profiles">
+        <div class="fb">
+            <img src="images.png" alt="Facebook" width="100px" height="100px" style="border-radius: 50%;">
+            <span>Facebook</span>
+          </div>
+          <div class="insta">
+            <img src="instagram logo.jpeg" alt="instagram" width="100px" height="100px" style="border-radius: 50%;">
+            <span>Instagram</span>
+          </div>
+          <div class="linkedin">
+            <img src="linkedin logo.png" alt="Linkedin" width="100px" height="100px" style="border-radius: 50%;">
+            <span>LinkedIn</span>
+          </div>
+          <div class="twitter">
+            <img src="twitter logo.jpeg" alt="Twitter" width="100px" height="100px" style="border-radius: 50%;">
+            <span>Twitter</span>
+          </div>
+          <div class="github">
+            <img src="github logo.png" alt="GitHub" width="100px" height="100px" style="border-radius: 50%;">
+            <span>Github</span>
+          </div>
+      </div>
+      <div class="form">
+        <center style="margin-top: 70px;">
+          <form action="">
+            <label for="name">Name:</label>
+            <input type="text" value="Enter name" id="name" style="width: 200px;height: 40px;">
+            <br>
+            <br>
+            <label for="mail">E-mail:</label>
+            <input type="text" value="Enter E-mail" id="mail" style="width: 200px;height: 40px;">
+            <br>
+            <br>
+            <label for="About">About:</label>
+            <textarea type="textarea" id="About" value="Enter Information" rows="4" cols="40"></textarea>
+            <br>
+            <br>
+            <button class="footer_button">Contact us</button>
+          </form>
+        </center>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "UI/UX designer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
